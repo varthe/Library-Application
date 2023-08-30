@@ -1,6 +1,5 @@
 import sqlite3, datetime
 from Utils import data
-
 import tkinter.messagebox
 
 def loginUser(email, password):

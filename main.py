@@ -65,8 +65,6 @@ class LoginPage(tk.Frame):
         errorLabel = tk.Label(self, fg="red")
         errorLabel.pack()
 
-
-
         loginButton = tk.Button(self, text="Log in", command=lambda: loginUser())
         loginButton.pack()
         orLabel = tk.Label(self, text="or")
@@ -192,6 +190,7 @@ class LibraryPage(tk.Frame):
             filterBarFrame.pack()
             filterBarLabel = tk.Label(filterBarFrame, text="Filter by: ")
             filterBarLabel.pack(side="top")
+
             availableButton = tk.Button(filterBarFrame, text="Available", command=lambda: filterByAvailable([filterBarFrame, booksFrame]))
             availableButton.pack()
             dueTodayButton = tk.Button(filterBarFrame, text="Due today", command=lambda: filterByDueToday([filterBarFrame, booksFrame]))
@@ -200,6 +199,7 @@ class LibraryPage(tk.Frame):
             unavailableButton.pack()
             showAllButton = tk.Button(filterBarFrame, text="Show All", command=lambda: showAll([filterBarFrame, booksFrame]))
             showAllButton.pack()
+
             """
             Create parent frame for the book list
             """
